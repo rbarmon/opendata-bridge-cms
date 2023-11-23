@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * work router
+ * dataset router
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::work.work');
+module.exports = createCoreRouter('api::dataset.dataset');

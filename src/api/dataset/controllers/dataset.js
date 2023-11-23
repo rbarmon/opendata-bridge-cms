@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * work controller
+ * dataset controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::work.work');
+module.exports = createCoreController('api::dataset.dataset');
