@@ -1,4 +1,8 @@
 module.exports = ({ env }) => ({
+  i18n: true,
+  'strapi-plugin-ja-pack': {
+    enabled: true,
+  },
   // https://github.com/DomDew/strapi-plugin-fuzzy-search/issues/92
   'fuzzy-search': {
     enabled: true,

@@ -6,15 +6,20 @@ import strapiCloud from "@strapi/plugin-cloud/strapi-admin";
 import graphql from "@strapi/plugin-graphql/strapi-admin";
 import i18N from "@strapi/plugin-i18n/strapi-admin";
 import usersPermissions from "@strapi/plugin-users-permissions/strapi-admin";
+import strapiPluginJaPack from "strapi-plugin-ja-pack/strapi-admin";
 import multiSelect from "strapi-plugin-multi-select/strapi-admin";
 import { renderAdmin } from "@strapi/strapi/admin";
 
+import customisations from "../../src/admin/app.js";
+
 renderAdmin(document.getElementById("strapi"), {
+  customisations,
   plugins: {
     "strapi-cloud": strapiCloud,
     graphql: graphql,
     i18n: i18N,
     "users-permissions": usersPermissions,
+    "strapi-plugin-ja-pack": strapiPluginJaPack,
     "multi-select": multiSelect,
   },
 });
