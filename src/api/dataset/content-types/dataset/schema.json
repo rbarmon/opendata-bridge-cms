@@ -19,6 +19,9 @@
     "url": {
       "type": "string",
       "required": true
+    },
+    "organization": {
+      "type": "string"
     }
   }
 }
