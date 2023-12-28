@@ -29,15 +29,34 @@
       "type": "media",
       "multiple": true,
       "required": false,
-      "allowedTypes": [
-        "images"
-      ]
+      "allowedTypes": ["images"]
     },
     "tags": {
       "type": "customField",
       "options": [
-        "公園",
-        "育児"
+        "経済・財政",
+        "データ・統計",
+        "調査",
+        "報告",
+        "公共施設",
+        "法律・政府運営",
+        "地域情報",
+        "人口",
+        "教育・研究",
+        "健康・福祉",
+        "子育て",
+        "犯罪・司法",
+        "災害・防災",
+        "気象",
+        "地質",
+        "環境・エネルギー",
+        "地理情報・地図",
+        "インフラ",
+        "交通",
+        "産業",
+        "労働",
+        "観光",
+        "文化"
       ],
       "customField": "plugin::multi-select.multi-select"
     },

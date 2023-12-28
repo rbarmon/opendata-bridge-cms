@@ -376,7 +376,7 @@ export interface ApiDatasetDataset extends Schema.CollectionType {
   attributes: {
     title: Attribute.String & Attribute.Required;
     url: Attribute.String & Attribute.Required;
-    organization: Attribute.String;
+    organization: Attribute.String & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -418,7 +418,31 @@ export interface ApiProjectProject extends Schema.CollectionType {
     tags: Attribute.JSON &
       Attribute.CustomField<
         'plugin::multi-select.multi-select',
-        ['\u516C\u5712', '\u80B2\u5150']
+        [
+          '\u7D4C\u6E08\u30FB\u8CA1\u653F',
+          '\u30C7\u30FC\u30BF\u30FB\u7D71\u8A08',
+          '\u8ABF\u67FB',
+          '\u5831\u544A',
+          '\u516C\u5171\u65BD\u8A2D',
+          '\u6CD5\u5F8B\u30FB\u653F\u5E9C\u904B\u55B6',
+          '\u5730\u57DF\u60C5\u5831',
+          '\u4EBA\u53E3',
+          '\u6559\u80B2\u30FB\u7814\u7A76',
+          '\u5065\u5EB7\u30FB\u798F\u7949',
+          '\u5B50\u80B2\u3066',
+          '\u72AF\u7F6A\u30FB\u53F8\u6CD5',
+          '\u707D\u5BB3\u30FB\u9632\u707D',
+          '\u6C17\u8C61',
+          '\u5730\u8CEA',
+          '\u74B0\u5883\u30FB\u30A8\u30CD\u30EB\u30AE\u30FC',
+          '\u5730\u7406\u60C5\u5831\u30FB\u5730\u56F3',
+          '\u30A4\u30F3\u30D5\u30E9',
+          '\u4EA4\u901A',
+          '\u7523\u696D',
+          '\u52B4\u50CD',
+          '\u89B3\u5149',
+          '\u6587\u5316'
+        ]
       >;
     recipe: Attribute.JSON;
     prompt: Attribute.Text;
