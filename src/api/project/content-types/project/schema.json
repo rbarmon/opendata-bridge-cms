@@ -33,6 +33,9 @@
         "images"
       ]
     },
+    "recipe": {
+      "type": "json"
+    },
     "prompt": {
       "type": "text"
     },
@@ -40,9 +43,6 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::tag.tag"
-    },
-    "recipe": {
-      "type": "string"
     }
   }
 }
