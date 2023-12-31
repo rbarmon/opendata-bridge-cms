@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_project_recipes",
+  "info": {
+    "displayName": "recipe",
+    "icon": "file",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "prompt": {
+      "type": "text",
+      "required": false
+    },
+    "script": {
+      "type": "text"
+    }
+  }
+}
