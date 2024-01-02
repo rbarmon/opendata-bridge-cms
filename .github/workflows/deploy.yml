@@ -58,7 +58,7 @@ jobs:
           package: release.zip
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9607F610ED9844D5B8D86B9D67D4A38C }}
           type: zip
-          restart: false
+          restart: true
 
       - name: Delete zip file
         run: rm release.zip
