@@ -10,7 +10,7 @@
   "scripts": {
     "build": "strapi build",
     "develop": "strapi develop",
-    "start": "strapi start",
+    "start": "node_modules/.bin/strapi start",
     "strapi": "strapi"
   },
   "dependencies": {
