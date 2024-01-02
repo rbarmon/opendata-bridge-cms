@@ -783,6 +783,7 @@ export interface ApiDatasetDataset extends Schema.CollectionType {
     title: Attribute.String & Attribute.Required;
     url: Attribute.String & Attribute.Required;
     organization: Attribute.String & Attribute.Required;
+    file: Attribute.Media & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

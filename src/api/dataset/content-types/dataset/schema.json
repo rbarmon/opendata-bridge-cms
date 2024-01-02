@@ -23,6 +23,14 @@
     "organization": {
       "type": "string",
       "required": true
+    },
+    "file": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }
