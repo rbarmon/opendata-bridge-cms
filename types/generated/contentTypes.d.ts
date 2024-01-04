@@ -828,6 +828,7 @@ export interface ApiProjectProject extends Schema.CollectionType {
       'api::tag.tag'
     >;
     recipes: Attribute.Component<'project.recipe', true>;
+    formattedFile: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
