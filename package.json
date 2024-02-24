@@ -12,7 +12,8 @@
     "dev": "strapi develop",
     "dev:production": "source .env.production.local && strapi develop",
     "start": "node_modules/.bin/strapi start",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "test": "jest --forceExit --detectOpenHandles"
   },
   "dependencies": {
     "@strapi/plugin-cloud": "4.20.2",
@@ -40,9 +41,19 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
-    "@commitlint/config-conventional": "^18.4.3"
+    "@commitlint/config-conventional": "^18.4.3",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4"
   },
   "overrides": {
     "graphql": "^16"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      ".tmp",
+      ".cache"
+    ],
+    "testEnvironment": "node"
   }
 }
