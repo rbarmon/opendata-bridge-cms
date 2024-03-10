@@ -13,11 +13,14 @@
   "pluginOptions": {},
   "attributes": {
     "displayMessages": {
-      "type": "json",
-      "required": true
+      "type": "text",
+      "required": true,
+      "default": "[]"
     },
     "llmMessages": {
-      "type": "json"
+      "type": "text",
+      "required": true,
+      "default": "[]"
     }
   }
 }
