@@ -65,12 +65,6 @@
       "target": "plugin::users-permissions.role",
       "inversedBy": "users",
       "configurable": false
-    },
-    "conversations": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::conversation.conversation",
-      "mappedBy": "users_permissions_user"
     }
   }
 }
